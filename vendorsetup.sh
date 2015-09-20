@@ -1,2 +1,1 @@
-add_lunch_combo cm_shieldtablet-eng
-add_lunch_combo cm_shieldtablet-userdebug
+add_lunch_combo eos_shieldtablet-userdebug
