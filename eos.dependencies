@@ -7,7 +7,7 @@
   },
   {
     "remote": "github",
-    "repository": "wrapped/vendor_nvidia",
+    "repository": "teameos/vendor_nvidia",
     "target_path": "vendor/nvidia",
     "revision": "lp5.1"
   }
