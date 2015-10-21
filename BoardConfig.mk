@@ -34,7 +34,7 @@ TARGET_NO_RADIOIMAGE := true
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/nvidia/shieldtablet
 TARGET_KERNEL_CONFIG := cyanogenmod_shieldtablet_defconfig
-
+BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive androidboot.hardware=tn8
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_USERDATAIMAGE_PARTITION_SIZE  := 12799754240
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1342177280
