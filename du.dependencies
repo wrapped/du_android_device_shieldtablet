@@ -7,8 +7,8 @@
   },
   {
     "remote": "github",
-    "repository": "teameos/vendor_nvidia",
+    "repository": "CM-Shield/proprietary_vendor_nvidia",
     "target_path": "vendor/nvidia",
-    "revision": "mm6.0"
+    "revision": "cm-13.0"
   }
 ]

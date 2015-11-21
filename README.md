@@ -1,6 +1,6 @@
-**Copyright 2015 - TeamEOS**
+**Dirty Unicorns**
 
-## Nvidia Shield Tablet LTE.
+## Nvidia Shield Tablet.
 
 Basic   | Spec Sheet
 -------:|:-------------------------
