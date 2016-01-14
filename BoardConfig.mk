@@ -34,7 +34,8 @@ TARGET_NO_RADIOIMAGE := true
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/nvidia/shieldtablet
 TARGET_KERNEL_CONFIG := cyanogenmod_shieldtablet_defconfig
-BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive androidboot.hardware=tn8
+BOARD_KERNEL_CMDLINE := androidboot.hardware=tn8 androidboot.selinux=permissive
+
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
 BOARD_CACHEIMAGE_PARTITION_SIZE := 1073741824
@@ -42,6 +43,9 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16777216
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1342177280
 BOARD_USERDATAIMAGE_PARTITION_SIZE  := 12799754240
 BOARD_FLASH_BLOCK_SIZE := 4096
+
+# PowerHAL
+TARGET_POWERHAL_VARIANT := tegra
 
 # Audio
 BOARD_USES_GENERIC_AUDIO := false
@@ -51,6 +55,8 @@ BOARD_USES_ALSA_AUDIO := true
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR ?= device/nvidia/shieldtablet/bluetooth
+# At least when debugging is enabled, we have the same crash as manta
+BCM_BLUETOOTH_MANTA_BUG := true
 
 # Graphics
 USE_OPENGL_RENDERER := true
@@ -85,7 +91,10 @@ WIFI_DRIVER_MODULE_NAME          := "bcmdhd"
 BOARD_HARDWARE_CLASS := device/nvidia/shieldtablet/cmhw/
 
 # SELinux
-BOARD_SEPOLICY_DIRS += device/nvidia/shieldtablet/sepolicy
+BOARD_SEPOLICY_DIRS += device/nvidia/shieldtablet/sepolicy/common \
+                       device/nvidia/shieldtablet/sepolicy/icera \
+                       device/nvidia/shieldtablet/sepolicy/product \
+                       device/nvidia/shieldtablet/sepolicy/raydium
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
