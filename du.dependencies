@@ -1,14 +1,12 @@
 [
   {
-    "remote": "github",
-    "repository": "cm-shield/android_kernel_nvidia_shieldtablet",
+    "repository": "DirtyUnicorns/android_kernel_nvidia_shieldtablet",
     "target_path": "kernel/nvidia/shieldtablet",
-    "revision": "cm-13.0"
+    "revision": "m"
   },
   {
-    "remote": "github",
-    "repository": "CM-Shield/proprietary_vendor_nvidia",
+    "repository": "DirtyUnicorns/android_vendor_nvidia",
     "target_path": "vendor/nvidia",
-    "revision": "cm-13.0"
+    "revision": "m"
   }
 ]
