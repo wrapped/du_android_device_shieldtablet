@@ -16,4 +16,4 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/full_shieldtablet.mk \
-    $(LOCAL_DIR)/eos.mk
+    $(LOCAL_DIR)/du.mk
