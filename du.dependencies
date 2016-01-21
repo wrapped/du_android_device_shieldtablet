@@ -5,6 +5,11 @@
     "revision": "m"
   },
   {
+    "repository": "DirtyUnicorns/android_hardware_nvidia_power",
+    "target_path": "hardware/nvidia/power",
+    "revision": "m"
+  },
+  {
     "repository": "DirtyUnicorns/android_vendor_nvidia",
     "target_path": "vendor/nvidia",
     "revision": "m"
