@@ -124,3 +124,8 @@ $(call inherit-product-if-exists, vendor/nvidia/shield_common/consolemode-blobs.
 # DU Updater
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.du.updater=shieldtablet
+
+# Stock Camera
+$(call inherit-product-if-exists, vendor/nvidia/shield_common/nvcamera-blobs.mk)
+
+$(call inherit-product, device/nvidia/shield-common/shield.mk)
