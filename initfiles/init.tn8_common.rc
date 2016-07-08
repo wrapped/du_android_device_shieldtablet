@@ -19,6 +19,7 @@ on fs
     setprop ro.crypto.umount_sd false
     setprop audio.custompolicy 1
     mount_all /fstab.tn8
+    swapon_all /fstab.tn8
 
 on post-fs-data
     symlink /system/vendor/bin/FinalTestThresholdManage.ini /data/FinalTestThresholdManage.ini	26
