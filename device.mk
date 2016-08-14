@@ -30,6 +30,8 @@ $(call inherit-product-if-exists, vendor/nvidia/shieldtablet/shieldtablet-vendor
 
 $(call inherit-product, device/nvidia/shield-common/shield.mk)
 
+PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.name
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     device/nvidia/shieldtablet/overlay
