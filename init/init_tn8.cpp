@@ -56,9 +56,8 @@ void gsm_properties()
 
 void vendor_load_properties()
 {
-    char platform[PROP_VALUE_MAX];
-    char model[PROP_VALUE_MAX];
-    int rc;
+    std::string platform = "";
+    std::string model = "";
     FILE  *fp = NULL;
     char  *board_info = NULL;
     char  *override = NULL;
@@ -71,8 +70,8 @@ void vendor_load_properties()
     };
     int detected_model = wx_unknown;
 
-    rc = property_get("ro.board.platform", platform);
-    if (!rc || strncmp(platform, ANDROID_TARGET, PROP_VALUE_MAX))
+    platform = property_get("ro.board.platform");
+    if (strncmp(platform.c_str(), ANDROID_TARGET, PROP_VALUE_MAX))
         return;
 
     // Check for persistent model override
@@ -155,8 +154,8 @@ void vendor_load_properties()
     property_set("ro.build.product", "shieldtablet");
     property_set("ro.product.device", "shieldtablet");
     property_set("ro.product.model", "SHIELD Tablet");
-    property_get("ro.product.name", model);
-    ERROR("Setting build properties for %s model\n", model);
+    model = property_get("ro.product.name");
+    ERROR("Setting build properties for %s model\n", model.c_str());
 }
 
 int vendor_handle_control_message(const char *msg, const char *arg)
