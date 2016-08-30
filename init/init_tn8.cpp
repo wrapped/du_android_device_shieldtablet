@@ -78,7 +78,7 @@ void vendor_load_properties()
     // Check for persistent model override
     fp = fopen("/data/property/persist.cm.shield.model", "r");
     if (fp) {
-        while ((getline(&override, &len, fp)) != (size_t)-1) {
+        while ((getline(&override, &len, fp)) != (ssize_t)-1) {
             if (strstr(override, "wx_"))
                 break;
         }
@@ -94,7 +94,7 @@ void vendor_load_properties()
                 detected_model = wx_un_mo;
 
             if (detected_model == wx_unknown)
-                ERROR("Invalid model override value given: %s\n");
+                ERROR("Invalid model override value given: %s\n", override);
             else
                 ERROR("Overriding device model to %s\n", override);
 
@@ -108,7 +108,7 @@ void vendor_load_properties()
         fp = fopen("/proc/cmdline", "r");
         if (fp == NULL)
             return;
-        while ((getline(&board_info, &len, fp)) != (size_t)-1) {
+        while ((getline(&board_info, &len, fp)) != (ssize_t)-1) {
             if (strstr(board_info, "board_info"))
                 break;
         }
