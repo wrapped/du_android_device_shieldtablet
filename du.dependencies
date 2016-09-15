@@ -2,21 +2,21 @@
   {
     "repository": "DirtyUnicorns/android_device_nvidia_shield-common",
     "target_path": "device/nvidia/shield-common",
-    "branch": "m"
+    "branch": "n"
   },
   {
     "repository": "DirtyUnicorns/android_kernel_nvidia_shield",
     "target_path": "kernel/nvidia/shield",
-    "branch": "m"
+    "branch": "n"
   },
   {
     "repository": "DirtyUnicorns/android_hardware_nvidia_power",
     "target_path": "hardware/nvidia/power",
-    "branch": "m"
+    "branch": "n"
   },
   {
     "repository": "DirtyUnicorns/android_vendor_nvidia",
     "target_path": "vendor/nvidia",
-    "branch": "m"
+    "branch": "n"
   }
 ]
