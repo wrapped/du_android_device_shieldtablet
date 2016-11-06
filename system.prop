@@ -17,7 +17,7 @@ ro.nv.usb.pid.rndis.adb=CF08
 ro.nv.usb.pid.ptp=CF07
 ro.nv.usb.pid.ptp.adb=CF05
 
-ro.bt.bdaddr_path=/mnt/factory/bluetooth/bt_mac.txt
-
-# Legacy omx decoder support
+# Camera
+camera2.portability.force_api=1
+media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
