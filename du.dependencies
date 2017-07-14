@@ -1,12 +1,32 @@
 [
  {
-   "repository":  "DirtyUnicorns/android_device_nvidia_shield-common",
-   "target_path": "device/nvidia/shield-common",
-   "branch":      "n7x"
+	"repository":	"DirtyUnicorns/android_device_nvidia_shield-common",
+	"target_path":	"device/nvidia/shield-common",
+	"branch":	"n7x"
  },
  {
-   "repository":  "DirtyUnicorns/android_kernel_nvidia_shield",
-   "target_path": "kernel/nvidia/shield",
-   "branch":      "n7x"
+	"repository":	"DirtyUnicorns/android_kernel_nvidia_shield",
+	"target_path":	"kernel/nvidia/shield",
+	"branch":	"n7x"
+ },
+ {
+	"repository":	"DirtyUnicorns/android_hardware_nvidia_libstagefrighthw",
+	"target_path":	"hardware/nvidia/libstagefrighthw",
+	"branch":	"n7x"
+ },
+ {
+	"repository":	"DirtyUnicorns/android_hardware_nvidia_power",
+	"target_path":	"hardware/nvidia/power",
+	"branch":	"n7x"
+ },
+ {
+	"repository":	"DirtyUnicorns/android_hardware_nvidia_thermal",
+	"target_path":	"hardware/nvidia/thermal",
+	"branch":	"n7x"
+ },
+ {
+	"repository":	"DirtyUnicorns/android_vendor_nvidia",
+	"target_path":	"vendor/nvidia",
+	"branch":	"n7x"
  }
 ]
