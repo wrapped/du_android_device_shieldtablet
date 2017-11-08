@@ -127,6 +127,13 @@ PRODUCT_PACKAGES += \
 # Radio Interface
 PRODUCT_PACKAGES += rild
 
+
 # HIDL
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml
+
+# Only set if framework modifications for nvcpl and shieldtech are available.
+NV_ANDROID_FRAMEWORK_ENHANCEMENTS := FALSE
+
+# Only set if framework modifications for blakepairing are available.
+NV_ANDROID_FRAMEWORK_ENHANCEMENTS_BLAKE := FALSE
