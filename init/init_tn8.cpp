@@ -28,6 +28,9 @@
 #include "init_shield.h"
 #include "service_shield.h"
 
+namespace android {
+namespace init {
+
 void vendor_load_properties()
 {
 	// ATM there is no know way to differentiate between wx_na_wf and sb_na_wf or wx_na_wf and wx_un_do. Little is known of wx_un_mo either.
@@ -40,8 +43,11 @@ void vendor_load_properties()
 	shield_init::build_version sav = { "7.0", "NRD90M", "1928188_1038.3875" };
 
 	shield_init si(devices, false, sav, std::vector<std::string>());
-	si.set_properties();
+	//si.set_properties();
 }
+
+}  // namespace init
+}  // namespace android
 
 int vendor_handle_control_message(const std::string &msg, const std::string &arg)
 {
