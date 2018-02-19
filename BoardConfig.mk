@@ -91,6 +91,7 @@ WIFI_DRIVER_MODULE_NAME          := "bcmdhd"
 BOARD_HARDWARE_CLASS := device/nvidia/shieldtablet/lineagehw/
 
 # SELinux
+BOARD_USE_ENFORCING_SELINUX := true
 BOARD_SEPOLICY_DIRS += device/nvidia/shieldtablet/sepolicy
 
 # Vendor Init
