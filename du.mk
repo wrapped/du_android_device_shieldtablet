@@ -5,7 +5,7 @@ TARGET_BOOTANIMATION_SIZE := 1080p
 $(call inherit-product, device/nvidia/shieldtablet/full_shieldtablet.mk)
 
 # Inherit some common omni stuff.
-$(call inherit-product, vendor/omni/config/common_tablet.mk)
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
-PRODUCT_NAME := omni_shieldtablet
+PRODUCT_NAME := du_shieldtablet
 PRODUCT_DEVICE := shieldtablet

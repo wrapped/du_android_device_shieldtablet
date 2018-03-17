@@ -27,8 +27,8 @@ TARGET_TEGRA_TOUCH := raydium
 $(call inherit-product, device/nvidia/shieldtablet/device_tablet.mk)
 $(call inherit-product, device/nvidia/shield-common/shield.mk)
 
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
-$(call inherit-product, vendor/omni/config/phone-xxhdpi-2048-hwui-memory.mk)
+$(call inherit-product, vendor/extras/configs/phone-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, vendor/extras/configs/phone-xxhdpi-2048-hwui-memory.mk)
 
 ifneq ("$(wildcard vendor/nvidia/shield/shieldtablet.mk)","")
 $(call inherit-product, vendor/nvidia/shield/shieldtablet.mk)
@@ -38,7 +38,7 @@ else
 $(error "No proprietary vendor found.")
 endif
 
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.name
+# PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.name
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
